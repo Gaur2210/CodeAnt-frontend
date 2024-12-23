@@ -1,6 +1,5 @@
 import { Outlet } from "react-router-dom";
 import styles from "./RightSection.module.css";
-import icon from "/icon.png";
 import SigninNav from "./SigninNav";
 
 function RightSection() {
@@ -11,7 +10,7 @@ function RightSection() {
           <div className={styles.header}>
             <header>
               <span>
-                <img src={icon} alt="icon" />
+                <img src="/icon.png" alt="icon" />
               </span>
               <p>CodeAnt AI</p>
             </header>

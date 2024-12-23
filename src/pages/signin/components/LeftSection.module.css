@@ -9,7 +9,20 @@
   height: 100dvh;
 }
 
-@media (max-width: 768px) {
+.logo{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.leftContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
   .left {
     display: none;
   }
