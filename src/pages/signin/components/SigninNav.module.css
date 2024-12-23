@@ -1,0 +1,31 @@
+.nav {
+  width: 100%;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.nav ul a {
+  all: unset;
+  border: 1px solid hsl(210, 5%, 92%);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #fafafa;
+  flex-grow: 1;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: #414651;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav ul a.active {
+  color: white;
+  background-color: #1570ef;
+}
