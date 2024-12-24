@@ -3,10 +3,10 @@ import MenuItem from "./MenuItem";
 import styles from "./Sidebar.module.css";
 
 function Sidebar() {
-  const [isOpen, setIsOpen] = useState(false); 
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleSidebar = () => {
-    setIsOpen(!isOpen); 
+    setIsOpen(!isOpen);
   };
 
   return (
@@ -21,7 +21,7 @@ function Sidebar() {
 
         {/* Hamburger Button */}
         <button className={styles.hamburger} onClick={toggleSidebar}>
-         <img src="/hamburger.png" alt="hamburger" />
+          <img src="/hamburger.png" alt="hamburger" />
         </button>
 
         {/* FullMenu */}
@@ -37,12 +37,7 @@ function Sidebar() {
           >
             Repositories
           </MenuItem>
-          <MenuItem
-            to=""
-            src="/code.png"
-            alt="code"
-            hoverSrc="/code-white.png"
-          >
+          <MenuItem to="" src="/code.png" alt="code" hoverSrc="/code-white.png">
             AI Code Review
           </MenuItem>
           <MenuItem
@@ -53,20 +48,10 @@ function Sidebar() {
           >
             Cloud Security
           </MenuItem>
-          <MenuItem
-            to=""
-            src="/book.png"
-            alt="book"
-            hoverSrc="/book-white.png"
-          >
+          <MenuItem to="" src="/book.png" alt="book" hoverSrc="/book-white.png">
             How to use
           </MenuItem>
-          <MenuItem
-            to=""
-            src="/gear.png"
-            alt="gear"
-            hoverSrc="/gear-white.png"
-          >
+          <MenuItem to="" src="/gear.png" alt="gear" hoverSrc="/gear-white.png">
             Settings
           </MenuItem>
         </ul>

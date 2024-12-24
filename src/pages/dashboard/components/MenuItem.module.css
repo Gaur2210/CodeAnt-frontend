@@ -23,11 +23,11 @@
 }
 
 .menuItem:hover {
-  background-color: #1570ef;
+  background-color: #F5F5F5;
 }
 
-.menuItem:hover a {
-  color: white; 
+.menuItem:hover.active {
+  background-color: #1570ef;
 }
 
 .active {
