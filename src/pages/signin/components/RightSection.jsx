@@ -23,6 +23,9 @@ function RightSection() {
       <p>
         By signing up you agree to the <strong>Privacy Policy</strong>.
       </p>
+      <p>
+        See <a href="/dashboard">Dashboard</a> here
+      </p>
     </div>
   );
 }

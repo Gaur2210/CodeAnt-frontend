@@ -1,0 +1,90 @@
+.sidebar {
+  flex: 0 0 17%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-right: 1px solid #e9eaeb;
+  height: 100dvh;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: self-start;
+  margin-top: 1.5rem;
+  width: 80%;
+}
+
+.top,
+.bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: self-start;
+  width: 100%;
+  margin: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.top header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.top header p {
+  font-family: "Satoshi", sans-serif;
+  font-size: 1.8rem;
+}
+
+.select {
+  width: 80%;
+  background-color: #ffffff;
+  border-radius: 0.3rem;
+  border: 1px solid #d5d7da;
+  padding: 0.6rem;
+  font-size: 1rem;
+  appearance: none;
+  color: #181d27;
+  background-image: url("/chevron-down.png");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1rem;
+  padding-right: 2rem;
+}
+
+.select:hover,
+.select:focus,
+.select:active {
+  border: 1px solid #d5d7da;
+}
+
+.select option {
+  background-color: #ffffff;
+  padding: 0.6rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border-radius: 0.5rem;
+  color: #181d27;
+}
+
+
+.hamburger{
+  all: unset;
+  cursor: pointer;
+  display: none;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .sidebar {
+    flex: 0 0 100%; 
+    width: 100%; 
+  }
+}

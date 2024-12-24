@@ -1,0 +1,14 @@
+.dashboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  background-color: #fafafa;
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  } 
+}

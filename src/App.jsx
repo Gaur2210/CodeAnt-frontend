@@ -6,6 +6,8 @@ import {
 import Signin from "./pages/signin/Signin";
 import Saas from "./pages/signin/components/Saas";
 import SelfHosted from "./pages/signin/components/SelfHosted";
+import Dashboard from "./pages/dashboard/Dashboard";
+import Repositories from "./pages/repositories/Repositories";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +29,20 @@ const router = createBrowserRouter([
       {
         path: "self-hosted",
         element: <SelfHosted />,
+      },
+    ],
+  },
+  {
+    path: "/dashboard",
+    element: <Dashboard />,
+    children: [
+      {
+        index: true,
+        element: <Navigate to="/dashboard/repositories" replace />,
+      },
+      {
+        path: "repositories",
+        element: <Repositories />,
       },
     ],
   },
