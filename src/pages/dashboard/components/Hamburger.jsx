@@ -1,17 +1,30 @@
+import { useState } from "react";
+import styles from "./Hamburger.module.css";
 import MenuItem from "./MenuItem";
-import styles from "./Sidebar.module.css";
 
-function Sidebar() {
+function Hamburger() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <div className={styles.sidebar}>
-      <div className={styles.top}>
+    <div className={styles.hamburgerContainer}>
+      <div className={styles.hamburger}>
         <header>
           <span>
             <img src="/icon.png" alt="icon" />
           </span>
           <p>CodeAnt AI</p>
         </header>
-
+        <button onClick={() => setOpen(!open)}>
+          <img src="/hamburger.png" alt="hamburger" />
+        </button>
+      </div>
+      {/* Overlay background */}
+      <div
+        className={`${styles.overlay} ${open ? styles.active : ""}`}
+        onClick={() => setOpen(!open)}
+      ></div>
+      
+      <div className={`${styles.dropdownMenu} ${open ? styles.open : ""}`}>
         <select className={styles.select}>
           <option>Username</option>
         </select>
@@ -41,10 +54,6 @@ function Sidebar() {
           <MenuItem to="" src="/gear.png" alt="gear" hoverSrc="/gear-white.png">
             Settings
           </MenuItem>
-        </ul>
-      </div>
-      <div className={styles.bottom}>
-        <ul className={styles.menu}>
           <MenuItem
             to=""
             src="/phone.png"
@@ -67,4 +76,4 @@ function Sidebar() {
   );
 }
 
-export default Sidebar;
+export default Hamburger;

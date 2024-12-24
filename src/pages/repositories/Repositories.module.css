@@ -20,12 +20,12 @@
   overflow-y: auto;
 }
 
-.stick{
+.stick {
   padding-bottom: 1rem;
-  position: sticky; 
-  top: 0; 
-  background-color: white; 
-  z-index: 10; 
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
 }
 
 /* To hide the scrollbar but allow scrolling */
@@ -35,4 +35,10 @@
 .container {
   -ms-overflow-style: none; /* Internet Explorer */
   scrollbar-width: none; /* Firefox */
+}
+
+@media (max-width: 768px) {
+  .stick {
+    all: unset;
+  }
 }

@@ -74,28 +74,9 @@
   color: #181d27;
 }
 
-
-.hamburger{
-  all: unset;
-  cursor: pointer;
-  display: none;
-}
-
 /* Media Query for Smaller Screens */
 @media (max-width: 768px) {
   .sidebar {
-    width: 100%;
-  }
-
-  .hamburger{
-    display: block;
-  }
-
-  .select{
-    display: none;
-  }
-
-  .menu{
-    display: none;
+   display: none;
   }
 }
