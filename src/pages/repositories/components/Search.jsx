@@ -1,10 +1,16 @@
 import styles from "./Search.module.css";
 
-function Search() {
+function Search({ query, onSearch }) {
+  
   return (
     <div className={styles.search}>
       <img src="/search.png" alt="search" />
-      <input type="text" placeholder="Search Repositories"></input>
+      <input
+        type="text"
+        placeholder="Search Repositories"
+        value={query}
+        onChange={onSearch}
+      ></input>
     </div>
   );
 }
