@@ -1,5 +1,12 @@
-
 # CodeAnt Frontend
+
+## Frontend Demo
+
+Here’s a demo of the frontend in action:
+
+<video src="media/demo.mp4" controls="controls" style="max-width: 100%; height: auto;">
+  Your browser does not support the video tag.
+</video>
 
 ## Installation
 
@@ -58,4 +65,3 @@ This will start the development server.
 ### Step 2: Access the Application
 
 Open your web browser and go to [http://localhost:5173/](http://localhost:5173/) to access the app.
-
