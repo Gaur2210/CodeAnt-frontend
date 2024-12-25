@@ -6,6 +6,15 @@ Here’s a demo of the frontend in action:
 
 https://github.com/user-attachments/assets/348789a3-53d1-4127-a2b1-1242bf0bb8c0
 
+## Technologies Used
+
+This project was built using the following technologies:
+
+- [React.js](https://reactjs.org/) - A JavaScript library for building user interfaces.
+- [React Router](https://reactrouter.com/) - A library for routing in React applications.
+- HTML5 - The standard markup language for creating web pages.
+- CSS3 - The style sheet language used for designing web pages.
+
 ## Installation
 
 ### Prerequisites
