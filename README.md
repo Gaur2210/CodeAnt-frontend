@@ -4,9 +4,7 @@
 
 Here’s a demo of the frontend in action:
 
-<video src="media/demo.mp4" controls="controls" style="max-width: 100%; height: auto;">
-  Your browser does not support the video tag.
-</video>
+https://github.com/user-attachments/assets/348789a3-53d1-4127-a2b1-1242bf0bb8c0
 
 ## Installation
 
